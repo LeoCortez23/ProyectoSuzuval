@@ -1,15 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;  /* Centrado horizontal */
+  align-items: center;      /* Centrado vertical */
+  height: 100vh;            /* Ocupa toda la altura de la ventana */
+  width: 100%;              /* Ocupa todo el ancho de la ventana */
+  position: absolute;       /* Asegura que el contenedor no afecte el flujo */
+  top: 0;                   /* Asegura que se quede en la parte superior */
+  left: 0;                  /* Asegura que se quede en la parte izquierda */
+}
 .card {
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff81;
-    backdrop-filter: blur(15px);
-    color: black;
-    animation: slideUp 3s ease-out forwards, float 3s ease-in-out infinite;
-  }
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff81;
+  backdrop-filter: blur(15px);
+  color: black;
+  animation: slideUp 3s ease-out forwards, float 3s ease-in-out infinite;
+}
   
   .card-title {
     text-align: center;

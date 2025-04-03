@@ -27,7 +27,7 @@ const Login = () => {
         localStorage.setItem('authToken', data.token); // Guardar el token
         alert('Login exitoso');
 
-        navigate('/document', { state: { token: data.token } });
+        navigate('/home', { state: { token: data.token } });
       } else {
         const errorText = await response.text();
         setError(errorText || '¡Error al iniciar sesión!');
@@ -39,6 +39,7 @@ const Login = () => {
   };
 
   return (
+    <div className='container'>
     <div className="card">
       <h2 className="card-title">Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
@@ -67,6 +68,7 @@ const Login = () => {
         {error && <p className="error">{error}</p>}
         <button type="submit" className="btn">Iniciar sesión</button>
       </form>
+    </div>
     </div>
   );
 };

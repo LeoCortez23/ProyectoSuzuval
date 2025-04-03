@@ -1,0 +1,83 @@
+/* Estilo general de la página */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que la altura de la pantalla se ocupe completamente */
+    width: 100%;
+  }
+  
+  /* Encabezado de la página */
+  .home-header {
+    background-color: #34495e; /* Color oscuro para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Área principal de contenido */
+  .home-content {
+    flex-grow: 1; /* Ocupa todo el espacio disponible debajo del encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Contenedor del contenido */
+  .content-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Título */
+  .content-container h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  /* Descripción o texto */
+  .content-container p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Botón */
+  .content-container button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto al pasar el mouse */
+  .content-container button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Footer */
+  .home-footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: auto; /* Esto empuja el footer hacia abajo */
+  }
+  
