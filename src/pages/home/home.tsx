@@ -9,10 +9,6 @@ const Home = () => {
       };
   return (
     <div className="home-container">
-      <header className="home-header">
-        Suzuval
-      </header>
-      
       <div className="home-content">
         <div className="content-container">
           <h2>Bienvenido</h2>

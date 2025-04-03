@@ -6,17 +6,7 @@
     width: 100%;
   }
   
-  /* Encabezado de la página */
-  .home-header {
-    background-color: #34495e; /* Color oscuro para el encabezado */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-  }
+
   
   /* Área principal de contenido */
   .home-content {
@@ -72,7 +62,8 @@
   
   /* Footer */
   .home-footer {
-    background-color: #34495e;
+    background-color: rgba(52, 73, 94, 0);
+  
     color: white;
     text-align: center;
     padding: 15px;

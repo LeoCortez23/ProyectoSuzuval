@@ -1,0 +1,106 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #ffffff0e;
+    backdrop-filter: blur (30px);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto; /* Centra el contenido en pantallas grandes */
+  }
+  
+  .navbar-logo {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-menu li {
+    margin: 0;
+  }
+  
+  .navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    background-color: #ce4a21e1; /* Cambiar el fondo al pasar el mouse */
+
+    color: white;
+  }
+  
+  /* Estilos para el menú hamburguesa (cuando la pantalla es pequeña) */
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .navbar-menu.active {
+    display: block; /* Mostrar el menú cuando esté activo */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .navbar-container {
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Ajustar dependiendo de la altura del navbar */
+      left: 0;
+      right: 0;
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  
+    .navbar-menu a {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  }
+  
