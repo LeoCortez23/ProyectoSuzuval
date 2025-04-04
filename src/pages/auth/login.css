@@ -30,14 +30,14 @@
     margin-bottom: 15px;
   }
   
-  label {
+  .label-login{
     display: flex;
     margin-bottom: 5px;
     justify-content: left;
     padding-left: 5px;
   }
   
-  input {
+  .input-login {
     width: 90%;
     padding: 10px;
     border: 1px solid #000000;
@@ -47,7 +47,7 @@
     color: #000000;
   }
   
-  input:focus {
+  .input-login:focus {
     outline: none;
     border: 2px solid #4CAF50; /* Cambiar el borde al enfocar */
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.8); /* Brillo alrededor del input */

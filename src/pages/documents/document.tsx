@@ -96,103 +96,74 @@ const Document = () => {
   };
 
   return (
-    <div className="card-doc">
-      <h2 className="card-title">Formulario de Certificado</h2>
-      {error && <p className="error">{error}</p>}
-      {message && <p className="success">{message}</p>}
+    <div className='container'>
+      <div className="card-doc">
+        <h2 className="card-title">Formulario de Certificado</h2>
+        {error && <p className="error">{error}</p>}
+        {message && <p className="success">{message}</p>}
 
-      <form onSubmit={handleSubmit} className="card-form">
-        <label>Tipo de Certificado:</label>
-        <input
-          type="text"
-          name="tipo_certificado"
-          value={formData.tipo_certificado}
-          onChange={handleChange}
-          required
-        />
+        <form onSubmit={handleSubmit} className="card-form">
+          <div className="form-group">
+            <label>Tipo de Certificado:</label>
+            <input type="text" name="tipo_certificado" value={formData.tipo_certificado} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Marca:</label>
-        <input
-          type="text"
-          name="marca"
-          value={formData.marca}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Marca:</label>
+            <input type="text" name="marca" value={formData.marca} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Modelo:</label>
-        <input
-          type="text"
-          name="modelo"
-          value={formData.modelo}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Modelo:</label>
+            <input type="text" name="modelo" value={formData.modelo} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Chasis:</label>
-        <input
-          type="text"
-          name="chasis"
-          value={formData.chasis}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Chasis:</label>
+            <input type="text" name="chasis" value={formData.chasis} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Motor:</label>
-        <input
-          type="text"
-          name="motor"
-          value={formData.motor}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Motor:</label>
+            <input type="text" name="motor" value={formData.motor} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Año:</label>
-        <input
-          type="number"
-          name="year"
-          value={formData.year}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Año:</label>
+            <input type="number" name="year" value={formData.year} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Patente:</label>
-        <input
-          type="text"
-          name="patente"
-          value={formData.patente}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Patente:</label>
+            <input type="text" name="patente" value={formData.patente} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Horas:</label>
-        <input
-          type="number"
-          name="horas"
-          value={formData.horas}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Horas:</label>
+            <input type="number" name="horas" value={formData.horas} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Orden de Trabajo:</label>
-        <input
-          type="text"
-          name="ordenTrabajo"
-          value={formData.ordenTrabajo}
-          onChange={handleChange}
-          required
-        />
+          <div className="form-group">
+            <label>Orden de Trabajo:</label>
+            <input type="text" name="ordenTrabajo" value={formData.ordenTrabajo} className="input-doc" onChange={handleChange} required />
+          </div>
 
-        <label>Detalle:</label>
-        <textarea
-          name="detalle"
-          value={formData.detalle}
-          onChange={handleChange}
-        ></textarea>
+          <div className="form-group">
+            <label>Detalle:</label>
+            <textarea name="detalle" value={formData.detalle} className="input-doc" onChange={handleChange}></textarea>
+          </div>
 
-        <button type="submit" className="btn">Enviar Documento</button>
-      </form>
+          <div className="btn-group">
+            <button type="submit" className="btn">Generar Certificado</button>
+          </div>
+
+        </form>
+
+      </div>
+      
     </div>
+    
+    
   );
 };
 

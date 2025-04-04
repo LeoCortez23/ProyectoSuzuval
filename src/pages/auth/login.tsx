@@ -44,22 +44,24 @@ const Login = () => {
       <h2 className="card-title">Iniciar sesión</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Ingrese su correo</label>
+          <label className="label-login" htmlFor="username">Ingrese su correo</label>
           <input
             type="text"
             id="username"
             placeholder="@"
+            className="input-login"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Ingrese su contraseña</label>
+          <label className="label-login" htmlFor="password">Ingrese su contraseña</label>
           <input
             type="password"
             id="password"
             placeholder="Contraseña"
+            className="input-login"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
